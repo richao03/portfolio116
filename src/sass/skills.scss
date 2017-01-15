@@ -1,0 +1,204 @@
+@import 'variable.scss';
+.Jquery {
+    margin-top:3vh;
+    height: 17vh;
+    width:10vw;
+    background-image: url('../img/jquery.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.Gulp {
+    margin-top:3vh;
+    height: 17vh;
+    width:10vw;
+    background-image: url('../img/gulp.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.Sass {
+    margin-top:3vh;
+    height: 17vh;
+    width:10vw;
+    background-image: url('../img/sass.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.Aws {
+    margin-top:3vh;
+    height: 17vh;
+    width:10vw;
+    background-image: url('../img/aws.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.Bootstrap {
+    margin-top:3vh;
+    height: 17vh;
+    width:10vw;
+    background-image: url('../img/bootstrap.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.Node {
+    margin-top:3vh;
+    height: 17vh;
+    width:10vw;
+    background-image: url('../img/node.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.Javascript {
+    position: relative;
+    margin-top:3vh;
+    height: 17vh;
+    width:10vw;
+    background-image: url('../img/js.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.Angular {
+    margin-top:3vh;
+    height: 17vh;
+    width:10vw;
+    background-image: url('../img/angular.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.React {
+    margin-top:3vh;
+    height: 17vh;
+    width:10vw;
+    background-image: url('../img/react.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.GitHub {
+    margin-top:3vh;
+    height: 17vh;
+    width:10vw;
+    background-image: url('../img/github.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.HTML {
+    position: relative;
+    margin-top:3vh;
+    height: 17vh;
+    width:10vw;
+    background-image: url('../img/html.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.CSS {
+    position: relative;
+    margin-top:3vh;
+    height: 17vh;
+    width:10vw;
+    background-image: url('../img/css3.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.skills {
+    overflow: none;
+    background-image:url('../img/training.png');
+    background-size:100vw 100vh;
+    clear: both;
+    top: 100vh;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    display: table;
+}
+
+.skillswords {
+    margin-top: 2vh;
+    margin-left: 20vw;
+    width:70vw;
+    font-size: 10pt !important;
+    font-family: 'VT323', serif;
+    color: white;
+    z-index: 101;
+    position: absolute;
+}
+
+.coverskills {
+
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    border-top: 11vh solid $startBlack;
+    border-bottom: 11vh solid $startBlack;
+    border-right: 50vw solid $startBlack;
+    border-left: 50vw solid $startBlack;
+    background-color: transparent;
+}
+
+.skillset1 {
+    float: left;
+    margin-right:5vw;
+}
+
+.skillset2 {
+        margin-right:5vw;
+    float: left;
+}
+
+.skillset3 {
+        margin-right:5vw;
+    float: left;
+}
+.skillset4 {
+    float: right;
+        margin-right:2vw;
+    float: left;
+}
+
+.skillsPortal {
+    display:none;
+    visibility:hidden;
+    margin-top:7vh;
+    margin-left:14vw;
+    background: transparent;
+    width: 75vw;
+    height: 78.1vh;
+    opacity: 0;
+    transition: visibility 0s, opacity 1s linear;
+}
+
+
+
+.startGrowskills {
+    border-right: 7.5vw solid $startBlack;
+    border-left: 7.5vw solid $startBlack;
+    /* Safari and Chrome */
+}
+
+
+@media screen and (min-width:769px) and (max-width: 992px) {
+.skillsPortal {
+    margin-left:13vw;
+    background: transparent;
+    width: 100vw;
+    height: 78.1vh;
+}
+
+ 
+}
+
+@media screen and (max-width: 768px) {
+.skillsPortal {
+    margin-left:12vw !important;
+    background: transparent;
+    width: 100vw;
+    height: 78.1vh;
+}
+}

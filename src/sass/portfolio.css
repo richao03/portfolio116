@@ -1,0 +1,73 @@
+@import 'variable.scss';
+.portfolio {
+ overflow:auto;
+    background-color: transparent;
+    clear: both;
+    top: 100vh;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    display: table;
+}
+
+.no-pad{
+    height:100%;
+}
+.portfolioWords{
+
+    margin-top:-10vh;
+    font-family: 'VT323', serif;
+    color: black;
+    z-index: 101;
+ 
+
+}
+.coverportfolio {
+    
+    height: 100%;
+    width: 100vw;
+    border-top: 11vh solid $startBlack;
+    border-bottom: 11vh solid $startBlack;
+    border-right: 50vw solid $startBlack;
+    border-left: 50vw solid $startBlack;
+    background-color: transparent;
+}
+
+.portfolioPortal {
+
+    overflow: none;
+    margin-top: -11vh;
+    margin-left: -41.7vw;
+    background: transparent;
+    width: 84vw;
+    height: 100vh;
+}
+
+.startGrowportfolio {
+    border-right: 7.5vw solid $startBlack;
+    border-left: 7.5vw solid $startBlack;
+    /* Safari and Chrome */
+}
+
+
+.portline1 {
+    margin-left: -25vw;
+    transition: 1s;
+}
+
+.portline2 {
+    margin-right: -25vw;
+    transition: 1s;
+}
+.portline4 {
+    margin-top: -15vh;
+    transition: 1s;
+}
+
+.portline3 {
+    margin-top: 5vh;
+    transition: 1s;
+}
+
+
+

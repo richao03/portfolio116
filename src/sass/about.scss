@@ -1,0 +1,60 @@
+@import 'variable.scss';
+
+.about{
+	background-image: url("../img/brasil.gif");
+    background-position:center;
+    background-size: 110vw 90vh;
+    clear:both;
+    top:100vh;
+    height:100vh;
+    width:100vw;
+    position: relative;
+    display: table;
+}
+.aboutwords{
+    margin-top:20vh;
+    margin-left: 19vw;
+    font-family: 'VT323', serif;
+    color: rgb(117,28,29);
+    z-index: 101;
+    position: absolute;
+
+}
+
+  
+.color-aboutColor{
+       border-color: #38c9f4 !important;
+}
+
+.coverAbout {
+    overflow-y: none;
+    position: absolute;
+    height:100vh;
+    width: 100vw;
+    border-top: 21vh solid ;
+    border-bottom: 21vh solid ;
+    border-right: 50vw solid ;
+    border-left: 50vw solid ;
+    background-color: transparent;
+
+}
+
+.aboutPortal {
+    background: transparent;
+    width: 50vw;
+    height: 78.1vh;
+}
+
+.startGrowAbout {
+    
+    border-right: 0vw solid ;
+    border-left: 0vw solid ;
+   
+    /* Safari and Chrome */
+ 
+}
+
+.about-it{
+
+    width:40vw;
+}

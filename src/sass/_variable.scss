@@ -1,0 +1,48 @@
+$startBlack:rgb(31, 31, 31);
+.color-landing {
+    transition: border-color 1s ease;
+    border-color: rgb(31, 31, 31) !important;
+}
+
+.color-about {
+    transition: border-color 1s ease;
+    border-color: rgb(59,169,168) !important;
+}
+/*
+//#38c9f4
+*/
+.color-training {
+    transition: border-color 1s ease;
+    border-color: rgb(146, 145, 146) !important;
+}
+.color-contact {
+    transition: border-color 1s ease;
+    border-color: black!important;
+}
+
+.color-portfolio {
+    transition: border-color 1s ease;
+    border-color: rgb(255, 255, 255) !important;
+}
+
+.line-portfolio {
+    
+    border-color: rgba(255, 0, 0, 1) !important;
+}
+
+.line-skills {
+    border-color: rgba(143, 200, 78, .3) !important;
+}
+
+.line-cover {
+    border-color: rgba(255, 255, 255, .3) !important;
+}
+
+.line-about {
+    border-color: rgba(255, 0, 0, .3)!important;
+}
+
+.line-contact {
+    border-color: rgba(255, 255, 255, .8)!important;
+}
+

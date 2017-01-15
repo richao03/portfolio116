@@ -1,0 +1,51 @@
+.menu{
+	overflow:none;
+	display:table;
+	color:grey;
+	left:0vw;
+	top:26vh;
+	height:48vh;
+	width:17vw;
+	z-index: 200;
+	position:fixed;
+	-webkit-transition-duration: .5s;
+}
+
+.menu:hover{
+	cursor:pointer;
+	color:white;
+	font-weight:bolder;
+	-webkit-transition-duration: .5s;
+}
+.menuBurger{
+	position:absolute;
+	padding-top:20vh;
+	padding-left:5vw;
+	z-index: 300;
+	color:grey;
+	display:table-cell;
+	-webkit-transition-duration: .5s;
+}
+.menuBurger:hover{
+
+	color:white;
+
+}
+.menuPane{
+	float:left;
+	font-family: 'Josefin Slab', serif;
+	font-size: 4vh;
+	margin-top:5vh;
+	color:black;
+	margin-left:-20vw;
+	-webkit-transition-duration: .5s;
+}
+
+a{
+	color:black !important;
+}
+
+ul:hover, a:hover{
+	cursor: pointer;
+	font-weight: bold;
+};
