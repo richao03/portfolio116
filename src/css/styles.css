@@ -196,7 +196,7 @@
   display: table;
   color: grey;
   left: 0vw;
-  top: 26vh;
+  top: 26.1vh;
   height: 48vh;
   width: 17vw;
   z-index: 200;
@@ -223,17 +223,22 @@
 
 .menuPane {
   float: left;
-  font-family: 'Josefin Slab', serif;
-  font-size: 4vh;
-  margin-top: 5vh;
+  width: 100%;
+  font-family: 'VT323', serif;
+  font-size: 20pt;
+  margin-top: 5.5vh;
+  margin-left: -15vw;
   color: black;
-  margin-left: -35vw;
   -webkit-transition-duration: .5s; }
+
+.menuList {
+  padding-left: 3px; }
 
 a {
   color: black !important; }
 
-ul:hover, a:hover {
+ul:hover,
+a:hover {
   cursor: pointer;
   font-weight: bold; }
 
@@ -243,8 +248,8 @@ ul:hover, a:hover {
   .menuPane {
     float: left;
     width: 100%;
-    font-family: 'Josefin Slab', serif;
-    font-size: 4.5vw;
+    font-family: 'VT323', serif;
+    font-size: 10pt;
     margin-top: 13vh;
     color: black;
     margin-left: -35vw;
