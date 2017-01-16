@@ -223,7 +223,7 @@
   font-size: 4vh;
   margin-top: 5vh;
   color: black;
-  margin-left: -29vw;
+  margin-left: -35vw;
   -webkit-transition-duration: .5s; }
 
 a {
@@ -232,6 +232,19 @@ a {
 ul:hover, a:hover {
   cursor: pointer;
   font-weight: bold; }
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  .menuList {
+    padding: 0; }
+  .menuPane {
+    float: left;
+    width: 100%;
+    font-family: 'Josefin Slab', serif;
+    font-size: 4.5vw;
+    margin-top: 13vh;
+    color: black;
+    margin-left: -35vw;
+    -webkit-transition-duration: .5s; } }
 
 .color-landing {
   transition: border-color 1s ease;
