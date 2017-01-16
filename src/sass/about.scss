@@ -63,6 +63,7 @@
 }
 
 .about-it{
+    font-family: 'VT323', serif !important;
     font-weight:bolder;
     width:40vw;
 }
@@ -74,6 +75,7 @@ and (max-device-width : 667px) {
        h2 { font-size: 14px !important; }
        h3 { font-size: 12px !important; }
 .about-it{
+    
     font-size: 12pt !important;
     width:60vw;
 }
@@ -83,8 +85,6 @@ and (max-device-width : 667px) {
     margin-top:25vh;
     margin-left: 19vw;
     font-family: 'VT323', serif;
- /*   color: rgb(117,28,29);*/
-    color: rgb(117,28,29);
     z-index: 101;
     position: absolute;
 

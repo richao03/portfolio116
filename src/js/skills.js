@@ -1,11 +1,11 @@
 $(document).ready(function() {
 	$('.skillsIcon').hover(function(){
-	$(this).addClass("animated bounce")
-	console.log(this)
+	$(this).addClass("floating")
+
 	},	
 	(function(){
-	$(this).removeClass("animated bounce")
-	console.log(this)
+	$(this).removeClass("floating")
+	
 	}))
 
 	// 	$('.skillsIcon').mouseover(function(){

@@ -1,4 +1,7 @@
 $(document).ready(function() {
+    console.log("Facts: Best Fighter = Georges St. Pierre")
+    console.log("       Best Cat = Evee")
+    console.log("Thanks for visiting!")
     setTimeout(function() { document.getElementById("linevert1").className += " linevert1" }, 300)
     setTimeout(function() { document.getElementById("linevert2").className += " linevert2" }, 300)
     setTimeout(function() { document.getElementById("linevert3").className += " linevert3" }, 300)
