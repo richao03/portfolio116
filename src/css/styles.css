@@ -48,7 +48,7 @@
   display: table; }
 
 .aboutwords {
-  margin-top: 20vh;
+  margin-top: 15vh;
   margin-left: 19vw;
   font-family: 'VT323', serif;
   color: #751c1d;
@@ -63,8 +63,8 @@
   position: absolute;
   height: 100vh;
   width: 100vw;
-  border-top: 21vh solid;
-  border-bottom: 21vh solid;
+  border-top: 50vh solid;
+  border-bottom: 50vh solid;
   border-right: 50vw solid;
   border-left: 50vw solid;
   background-color: transparent; }
@@ -75,12 +75,34 @@
   height: 78.1vh; }
 
 .startGrowAbout {
+  border-top: 21vh solid;
+  border-bottom: 21vh solid;
   border-right: 0vw solid;
   border-left: 0vw solid;
   /* Safari and Chrome */ }
 
 .about-it {
+  font-weight: bolder;
   width: 40vw; }
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  h1 {
+    font-size: 18px !important; }
+  h2 {
+    font-size: 14px !important; }
+  h3 {
+    font-size: 12px !important; }
+  .about-it {
+    font-size: 12pt !important;
+    width: 60vw; }
+  .aboutwords {
+    font-size: 2pt !important;
+    margin-top: 25vh;
+    margin-left: 19vw;
+    font-family: 'VT323', serif;
+    color: #751c1d;
+    z-index: 101;
+    position: absolute; } }
 
 .color-landing {
   transition: border-color 1s ease;
@@ -138,7 +160,8 @@
 
 .imageCircle {
   height: 10vh;
-  border-radius: 50%; }
+  border-radius: 50%;
+  margin-bottom: -1vh; }
 
 .color-contactColor {
   border-color: #38c9f4 !important; }
@@ -150,8 +173,8 @@
   width: 100vw;
   border-top: 51vh solid;
   border-bottom: 50vh solid;
-  border-right: 50.2vw solid;
-  border-left: 50.2vw solid;
+  border-right: 50vw solid;
+  border-left: 50vw solid;
   background-color: transparent; }
 
 .contactPortal {
@@ -200,7 +223,7 @@
   font-size: 4vh;
   margin-top: 5vh;
   color: black;
-  margin-left: -20vw;
+  margin-left: -29vw;
   -webkit-transition-duration: .5s; }
 
 a {
@@ -445,7 +468,7 @@ ul:hover, a:hover {
 .skills {
   overflow: none;
   background-image: url("../img/training.png");
-  background-size: 100vw 100vh;
+  background-size: 104vw 100vh;
   clear: both;
   top: 100vh;
   height: 100vh;
@@ -455,7 +478,7 @@ ul:hover, a:hover {
 
 .skillswords {
   margin-top: 2vh;
-  margin-left: 20vw;
+  margin-left: 17vw;
   width: 70vw;
   font-size: 10pt !important;
   font-family: 'VT323', serif;
@@ -464,11 +487,12 @@ ul:hover, a:hover {
   position: absolute; }
 
 .coverskills {
+  overflow: none;
   position: absolute;
   height: 100vh;
   width: 100vw;
-  border-top: 11vh solid #1f1f1f;
-  border-bottom: 11vh solid #1f1f1f;
+  border-top: 50vh solid #1f1f1f;
+  border-bottom: 50vh solid #1f1f1f;
   border-right: 50vw solid #1f1f1f;
   border-left: 50vw solid #1f1f1f;
   background-color: transparent; }
@@ -491,17 +515,20 @@ ul:hover, a:hover {
   float: left; }
 
 .skillsPortal {
+  position: absolute;
   display: none;
   visibility: hidden;
   margin-top: 7vh;
-  margin-left: 14vw;
+  margin-left: 16vw;
   background: transparent;
-  width: 75vw;
-  height: 78.1vh;
+  /*  width: 60vw;
+    height: 78.1vh;*/
   opacity: 0;
   transition: visibility 0s, opacity 1s linear; }
 
 .startGrowskills {
+  border-top: 11vh solid #1f1f1f;
+  border-bottom: 11vh solid #1f1f1f;
   border-right: 7.5vw solid #1f1f1f;
   border-left: 7.5vw solid #1f1f1f;
   /* Safari and Chrome */ }
@@ -513,11 +540,11 @@ ul:hover, a:hover {
     width: 100vw;
     height: 78.1vh; } }
 
-@media screen and (max-width: 768px) {
+@media only screen and (min-device-width: 376px) and (max-device-width: 667px) {
   .skillsPortal {
-    margin-left: 12vw !important;
+    margin-left: 16.5vw !important;
     background: transparent;
-    width: 100vw;
+    width: 60vw;
     height: 78.1vh; } }
 
 .color-landing {
@@ -622,7 +649,7 @@ ul:hover, a:hover {
   display: block;
   background-image: url("../img/background.gif");
   background-repeat: no-repeat;
-  background-size: 110vw 101vh;
+  background-size: 110vw 105vh;
   height: 100vh;
   width: 100vw; }
 
@@ -688,10 +715,32 @@ ul:hover, a:hover {
     border-left: 10vw solid black;
     /* Safari and Chrome */ } }
 
-@media screen and (max-width: 768px) {
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  .coverWindow {
+    overflow-y: none;
+    position: absolute;
+    z-index: 100;
+    height: 100vh;
+    width: 100vw;
+    border-top: 30vh solid;
+    border-bottom: 30vh solid;
+    border-right: 51vw solid;
+    border-left: 50vw solid;
+    background-color: transparent; }
+  .words {
+    width: 55vw;
+    margin-top: 45vh;
+    margin-left: 20vw;
+    font-size: 14pt !important;
+    font-family: 'Josefin Slab', serif;
+    color: red;
+    z-index: 101;
+    position: absolute; }
   .portal {
-    width: 100vw; }
+    width: 50vw; }
   .startGrow {
+    border-top: 30vh solid black;
+    border-bottom: 30vh solid black;
     border-right: 5vw solid black;
     border-left: 5vw solid black;
     /* Safari and Chrome */ } }
@@ -856,10 +905,10 @@ video {
   z-index: 300;
   transition: 1s;
   display: none;
-  width: 49.2%;
-  height: 23.5vw;
+  width: 48.9%;
+  height: 23.3vw;
   position: absolute;
-  top: 48.2vw;
+  top: 48.8vw;
   left: 0.4vw; }
 
 #quoteMessage * {
@@ -894,7 +943,7 @@ video {
   width: 48.9%;
   height: 23.3vw;
   position: absolute;
-  top: 48.5vw;
+  top: 48.8vw;
   left: 42.5vw; }
 
 #battleMessage * {
@@ -930,23 +979,145 @@ video {
     min-height: 150px;
     min-width: 150px;
     width: 100%;
-    height: 33%; } }
+    height: 33%; }
+  #stackStoreMessage {
+    transition: 1s;
+    display: none;
+    position: absolute;
+    width: 99%;
+    height: 48.3vw;
+    background-color: black;
+    z-index: 300;
+    top: 94.4vw;
+    left: .4vw;
+    text-align: center; }
+  #refineryMessage {
+    transition: 1s;
+    display: none;
+    position: absolute;
+    width: 99%;
+    height: 48.3vw;
+    background-color: #15cfa0;
+    z-index: 300;
+    top: 47.4vw;
+    left: .4vw;
+    text-align: center; }
+  #NYGMessage {
+    background-color: #45c3fe;
+    z-index: 300;
+    transition: 1s;
+    display: none;
+    width: 99%;
+    height: 48.3vw;
+    position: absolute;
+    top: 190.5vw;
+    left: 0.4vw; }
+  #weatherMessage {
+    transition: 1s;
+    display: none;
+    position: absolute;
+    width: 99%;
+    height: 48.3vw;
+    background-color: #021f86;
+    z-index: 300;
+    top: 141.5vw;
+    left: .4vw;
+    text-align: center; }
+  #quoteMessage {
+    transition: 1s;
+    display: none;
+    position: absolute;
+    width: 99%;
+    height: 48.3vw;
+    background-color: #369efb;
+    z-index: 300;
+    top: 189.4vw;
+    left: .4vw;
+    text-align: center; }
+  #battleMessage {
+    transition: 1s;
+    display: none;
+    position: absolute;
+    width: 99%;
+    height: 48.3vw;
+    background-color: white;
+    z-index: 300;
+    top: 237.4vw;
+    left: .4vw;
+    text-align: center; } }
 
 @media screen and (max-width: 768px) {
   #video {
     float: left; }
-  .portfolioPortal {
-    overflow-y: auto;
-    margin-left: -33vw;
-    margin-top: 15vh;
-    position: relative;
-    background: transparent;
-    width: 66vw;
-    height: 48.1vh; }
   video {
     float: top;
     margin-bottom: -5px;
     min-height: 150px;
     min-width: 150px;
     width: 100%;
-    height: 33%; } }
+    height: 33%; }
+  #stackStoreMessage {
+    transition: 1s;
+    display: none;
+    position: absolute;
+    width: 99%;
+    height: 48.3vw;
+    background-color: black;
+    z-index: 300;
+    top: 94.4vw;
+    left: .4vw;
+    text-align: center; }
+  #refineryMessage {
+    transition: 1s;
+    display: none;
+    position: absolute;
+    width: 99%;
+    height: 48.3vw;
+    background-color: #15cfa0;
+    z-index: 300;
+    top: 47.4vw;
+    left: .4vw;
+    text-align: center; }
+  #NYGMessage {
+    background-color: #45c3fe;
+    z-index: 300;
+    transition: 1s;
+    display: none;
+    width: 99%;
+    height: 48.3vw;
+    position: absolute;
+    top: 190.5vw;
+    left: 0.4vw; }
+  #weatherMessage {
+    transition: 1s;
+    display: none;
+    position: absolute;
+    width: 99%;
+    height: 48.3vw;
+    background-color: #021f86;
+    z-index: 300;
+    top: 141.5vw;
+    left: .4vw;
+    text-align: center; }
+  #quoteMessage {
+    transition: 1s;
+    display: none;
+    position: absolute;
+    width: 99%;
+    height: 48.3vw;
+    background-color: #369efb;
+    z-index: 300;
+    top: 189.4vw;
+    left: .4vw;
+    text-align: center; }
+  #battleMessage {
+    transition: 1s;
+    display: none;
+    position: absolute;
+    width: 99%;
+    height: 48.3vw;
+    background-color: white;
+    z-index: 300;
+    top: 237.4vw;
+    left: .4vw;
+    text-align: center; } }

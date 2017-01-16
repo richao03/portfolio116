@@ -74,7 +74,7 @@
     display: block;
     background-image: url("../img/background.gif");
     background-repeat: no-repeat;
-    background-size: 110vw 101vh;
+    background-size: 110vw 105vh;
     height: 100vh;
     width: 100vw;
 }
@@ -152,11 +152,38 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) {
+
+    .coverWindow {
+    overflow-y: none;
+    position: absolute;
+    z-index: 100;
+    height: 100vh;
+    width: 100vw;
+    border-top: 30vh solid;
+    border-bottom: 30vh solid;
+    border-right: 51vw solid;
+    border-left: 50vw solid;
+    background-color: transparent;
+}
+    .words {
+    width: 55vw;
+    margin-top: 45vh;
+    margin-left: 20vw;
+    font-size: 14pt !important;
+    font-family: 'Josefin Slab', serif;
+    color: red;
+    z-index: 101;
+    position: absolute;
+}
     .portal {
-        width: 100vw;
+        width: 50vw;
     }
     .startGrow {
+        border-top:30vh solid black;
+        border-bottom: 30vh solid black;
         border-right: 5vw solid black;
         border-left: 5vw solid black;
         /* Safari and Chrome */

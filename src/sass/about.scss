@@ -11,13 +11,16 @@
     position: relative;
     display: table;
 }
+
 .aboutwords{
-    margin-top:20vh;
+
+    margin-top:15vh;
     margin-left: 19vw;
     font-family: 'VT323', serif;
     color: rgb(117,28,29);
     z-index: 101;
     position: absolute;
+
 
 }
 
@@ -31,8 +34,8 @@
     position: absolute;
     height:100vh;
     width: 100vw;
-    border-top: 21vh solid ;
-    border-bottom: 21vh solid ;
+    border-top: 50vh solid ;
+    border-bottom: 50vh solid ;
     border-right: 50vw solid ;
     border-left: 50vw solid ;
     background-color: transparent;
@@ -46,15 +49,41 @@
 }
 
 .startGrowAbout {
-    
+      border-top: 21vh solid ;
+    border-bottom: 21vh solid ;
     border-right: 0vw solid ;
     border-left: 0vw solid ;
    
     /* Safari and Chrome */
- 
+    
 }
 
 .about-it{
-
+    font-weight:bolder;
     width:40vw;
 }
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) {
+      h1 { font-size: 18px !important; }
+       h2 { font-size: 14px !important; }
+       h3 { font-size: 12px !important; }
+.about-it{
+    font-size: 12pt !important;
+    width:60vw;
+}
+.aboutwords{
+    
+    font-size:2pt !important;
+    margin-top:25vh;
+    margin-left: 19vw;
+    font-family: 'VT323', serif;
+    color: rgb(117,28,29);
+    z-index: 101;
+    position: absolute;
+
+
+}
+
+    }

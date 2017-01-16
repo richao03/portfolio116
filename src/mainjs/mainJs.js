@@ -1,3 +1,122 @@
+
+            $(document).scroll(function() {
+                console.log("beofre we juedge", $(window).width())
+                if ($(window).width() < 666) {      
+                    scroll_pos = $(this).scrollTop();
+                    console.log("we scroll", scroll_pos)
+                    if (scroll_pos < 344) {
+                        console.log("we scroll", scroll_pos)
+                        $(".cover").removeClass(function(index, className) {
+                            return (className.match(/(^|\s)color-\S+/g) || []).join(' ');
+                        });
+                        $(".cover").addClass("color-landing")
+                    } else
+
+                    if (scroll_pos > 345 && scroll_pos < 879) {
+                        setTimeout(function() { document.getElementById("coverAbout").className += " startGrowAbout transition15" }, 1500)
+                        setTimeout(function() { document.getElementById("coverAbout").classList.remove("transition15") }, 3000)
+                        $(".cover").removeClass(function(index, className) {
+                            return (className.match(/(^|\s)color-\S+/g) || []).join(' ');
+                        });
+                        $(".cover").addClass("color-about")
+                    } else
+
+                    if (scroll_pos > 880 && scroll_pos < 1617) {
+                        console.log("we scroll", scroll_pos)
+                        setTimeout(function() { $("#skillsPortal").css("visibility", "visible") }, 3000)
+                        setTimeout(function() { $("#skillsPortal").css("display", "block") }, 200)
+                        setTimeout(function() { $("#skillsPortal").css("opacity", "1") }, 3000)
+                        if (document.getElementById("coverskills").className.split(" ").indexOf("startGrowskills") < 0) {
+                            console.log("this is one")
+                            setTimeout(function() { document.getElementById("coverskills").className += " startGrowskills transition15" }, 1500)
+                        }
+                        setTimeout(function() { document.getElementById("coverskills").classList.remove("transition15") }, 3000)
+                        $(".cover").removeClass(function(index, className) {
+                            return (className.match(/(^|\s)color-\S+/g) || []).join(' ');
+                        });
+                        $(".cover").addClass("color-training")
+
+                    } else
+
+                    if (scroll_pos > 1618 && scroll_pos < 2758) {
+                        $(".cover").removeClass(function(index, className) {
+                            return (className.match(/(^|\s)color-\S+/g) || []).join(' ');
+                        });
+                        $(".cover").addClass("color-portfolio")
+                    } else
+
+                    if (scroll_pos > 2759) {
+                        if (document.getElementById("covercontact").className.split(" ").indexOf("startGrowcontact") < 0) {
+                            setTimeout(function() { document.getElementById("covercontact").className += " startGrowcontact transition15" }, 1500)
+                        }
+                        setTimeout(function() { document.getElementById("covercontact").classList.remove("transition15") }, 3000)
+                        $(".cover").removeClass(function(index, className) {
+                            return (className.match(/(^|\s)color-\S+/g) || []).join(' ');
+                        });
+                        $(".cover").addClass("color-contact")
+                    }
+
+
+
+                } else {  
+                		scroll_pos = $(this).scrollTop();
+                        console.log("first scroll", scroll_pos)
+                        if (scroll_pos < 299) {
+
+
+                            $(".cover").removeClass(function(index, className) {
+                                return (className.match(/(^|\s)color-\S+/g) || []).join(' ');
+                            });
+                            $(".cover").addClass("color-landing")
+                        } else
+
+                        if (scroll_pos > 300 && scroll_pos < 980) {
+                            setTimeout(function() { document.getElementById("coverAbout").className += " startGrowAbout transition15" }, 700)
+                            setTimeout(function() { document.getElementById("coverAbout").classList.remove("transition15") }, 5000)
+                            $(".cover").removeClass(function(index, className) {
+                                return (className.match(/(^|\s)color-\S+/g) || []).join(' ');
+                            });
+                            $(".cover").addClass("color-about")
+                        } else
+
+                        if (scroll_pos > 981 && scroll_pos < 1730) {
+                            setTimeout(function() { $("#skillsPortal").css("visibility", "visible") }, 3000)
+                            setTimeout(function() { $("#skillsPortal").css("display", "block") }, 200)
+                            setTimeout(function() { $("#skillsPortal").css("opacity", "1") }, 3000)
+                            if (document.getElementById("coverskills").className.split(" ").indexOf("startGrowskills") < 0) {
+                                setTimeout(function() { document.getElementById("coverskills").className += " startGrowskills transition15" }, 500)
+                            }
+                            setTimeout(function() { document.getElementById("coverskills").classList.remove("transition15") }, 7000)
+                            $(".cover").removeClass(function(index, className) {
+                                return (className.match(/(^|\s)color-\S+/g) || []).join(' ');
+                            });
+                            $(".cover").addClass("color-training")
+                        } else
+
+                        if (scroll_pos > 1731 && scroll_pos < 2635) {
+                            $(".cover").removeClass(function(index, className) {
+                                return (className.match(/(^|\s)color-\S+/g) || []).join(' ');
+                            });
+                            $(".cover").addClass("color-portfolio")
+                        } else
+
+                        if (scroll_pos > 2636) {
+                            if (document.getElementById("covercontact").className.split(" ").indexOf("startGrowcontact") < 0) {
+                                setTimeout(function() { document.getElementById("covercontact").className += " startGrowcontact transition15" }, 700)
+                            }
+                            setTimeout(function() { document.getElementById("covercontact").classList.remove("transition15") }, 5000)
+                            $(".cover").removeClass(function(index, className) {
+                                return (className.match(/(^|\s)color-\S+/g) || []).join(' ');
+                            });
+                            $(".cover").addClass("color-contact")
+                        }
+
+
+                    };
+                })
+
+
+
 /* ===========================================================
  * jquery-interactive_bg.js v1.0
  * ===========================================================
@@ -151,6 +270,44 @@
   
 }(window.jQuery);
 $(document).ready(function() {
+    $('.homeLink').click(() => {
+        $(".cover").removeClass(function(index, className) {
+            return (className.match(/(^|\s)color-\S+/g) || []).join(' ');
+        });
+        $(".cover").addClass("color-landing")
+    });
+
+    $('.aboutLink').click(() => {
+        $(".cover").removeClass(function(index, className) {
+            return (className.match(/(^|\s)color-\S+/g) || []).join(' ');
+        });
+        $(".cover").addClass("color-about")
+    });
+
+    $('.skillsLink').click(() => {
+        $(".cover").removeClass(function(index, className) {
+            return (className.match(/(^|\s)color-\S+/g) || []).join(' ');
+        });
+        $(".cover").addClass("color-training")
+    });
+
+    $('.portfolioLink').click(() => {
+        $(".cover").removeClass(function(index, className) {
+            return (className.match(/(^|\s)color-\S+/g) || []).join(' ');
+        });
+        $(".cover").addClass("color-portfolio")
+    });
+
+    $('.contactLink').click(() => {
+        $(".cover").removeClass(function(index, className) {
+            return (className.match(/(^|\s)color-\S+/g) || []).join(' ');
+        });
+        $(".cover").addClass("color-contact")
+    });
+
+})
+
+$(document).ready(function() {
     $(".hoverStackStore").hover(function() {
         $('#refineryMessage').css("display", "block")
     }, function() {
@@ -214,18 +371,13 @@ $(document).ready(function() {
     setTimeout(function() { document.getElementById("linevert2").className += " linevert2" }, 300)
     setTimeout(function() { document.getElementById("linevert3").className += " linevert3" }, 300)
     setTimeout(function() { document.getElementById("linevert4").className += " linevert4" }, 300)
-    setTimeout(function() { document.getElementById("coverWindow").className += " startGrow transition15", console.log(document.getElementById("coverWindow").className) }, 4500)
-    setTimeout(function() { document.getElementById("coverWindow").classList.remove("transition15") }, 7000)
-
-    // setTimeout(function() { document.getElementById("coverAbout").className += " startGrowAbout transition15", console.log(document.getElementById("coverAbout").className) }, 4500)
-    // setTimeout(function() { document.getElementById("coverAbout").classList.remove("transition15") }, 7000)
-
+     setTimeout(function() { document.getElementById("coverWindow").className += " startGrow transition15" }, 4500)
+        setTimeout(function() { document.getElementById("coverWindow").classList.remove("transition15") }, 7000)
 
 
 
     //INTERACTIVE BACKGROUND  
     $(".overlay").hover(function() {
-        s
         $(".landing").mousemove(function(e) {
             var movementStrength = 25;
             var height = movementStrength / $(window).height();
@@ -235,12 +387,10 @@ $(document).ready(function() {
             var newvalueX = width * pageX * 1;
             var newvalueY = height * pageY * 1;
             $('.landing').css("background-position", newvalueX + "px     " + newvalueY + "px");
-
         });
     })
 
     $(".skills").hover(function() {
-
         $(".skills").mousemove(function(e) {
             var movementStrength = 25;
             var height = movementStrength / $(window).height();
@@ -254,32 +404,37 @@ $(document).ready(function() {
         });
     })
 
+    $(".about").hover(function(){
+        $(".about").mousemove(function(e) {
+            var movementStrength = 25;
+            var height = movementStrength / $(window).height();
+            var width = movementStrength / $(window).width();
+            var pageX = 2 * (e.pageX - ($(window).width() / 1));
+            var pageY = 4 * (e.pageY - ($(window).height() / 1));
+            var newvalueX = width * pageX * 1;
+            var newvalueY = height * pageY * 1;
+            $('.about').css("background-position", newvalueX + "px     " + newvalueY + "px");
+
+        });
+    })
+
     //hovering over different panels
     $(".no-pad").hover(function() {
         $(".line1, .line2, .line3, .line4").removeClass(function(index, className) {
             return (className.match(/(^|\s)line-\S+/g) || []).join(' ');
         });
         $(".line1, .line2, .line3, .line4").addClass("line-cover");
-        $(".cover").removeClass(function(index, className) {
-            return (className.match(/(^|\s)color-\S+/g) || []).join(' ');
-        });
-        $(".cover").addClass("color-landing")
+ 
     });
 
 
     $(".portfolio").hover(function() {
-
-        $(".cover").removeClass(function(index, className) {
-            return (className.match(/(^|\s)color-\S+/g) || []).join(' ');
-        });
-
         $(".line1, .line2, .line3, .line4").removeClass(function(index, className) {
             return (className.match(/(^|\s)line-\S+/g) || []).join(' ');
         });
         $(".line1, .line2, .line3, .line4").removeClass(function(index, className) {
             return (className.match(/(^|\s)linevert\S+/g) || []).join(' ');
         });
-        $(".cover").addClass("color-portfolio")
         $(".line1, .line2, .line3, .line4").addClass("line-portfolio");
         $(".line1").addClass("portline1")
         $(".line2").addClass("portline2")
@@ -288,7 +443,6 @@ $(document).ready(function() {
     });
 
     $(".portfolio").mouseleave(() => {
-
         $(".line1, .line2, .line3, .line4").removeClass(function(index, className) {
             return (className.match(/(^|\s)portline\S+/g) || []).join(' ');
         });
@@ -299,80 +453,24 @@ $(document).ready(function() {
     })
 
     $(".skills").hover(function() {
-        if (document.getElementById("coverskills").className.split(" ").indexOf("startGrowskills") < 0) {
-            setTimeout(function() { document.getElementById("coverskills").className += " startGrowskills transition15", console.log(document.getElementById("coverskills").className) }, 500)
-        }
-        setTimeout(function() { document.getElementById("coverskills").classList.remove("transition15") }, 7000)
+      
         setTimeout(function() { $("#skillsPortal").css("visibility", "visible") }, 3000)
-           setTimeout(function() { $("#skillsPortal").css("display", "block") }, 200)
+        setTimeout(function() { $("#skillsPortal").css("display", "block") }, 200)
         setTimeout(function() { $("#skillsPortal").css("opacity", "1") }, 3000)
-        $(".cover").removeClass(function(index, className) {
-            return (className.match(/(^|\s)color-\S+/g) || []).join(' ');
-        });
-        $(".cover").addClass("color-training")
+       
         $(".line1, .line2, .line3, .line4").removeClass(function(index, className) {
             return (className.match(/(^|\s)line-\S+/g) || []).join(' ');
         });
         $(".line1, .line2, .line3, .line4").addClass("line-skills");
     });
 
-    $(".about").hover(function() {
-        if (document.getElementById("coverAbout").className.split(" ").indexOf("startGrowAbout") < 0) {
-            setTimeout(function() { document.getElementById("coverAbout").className += " startGrowAbout transition15", console.log(document.getElementById("coverAbout").className) }, 700)
-        }
-        setTimeout(function() { document.getElementById("coverAbout").classList.remove("transition15") }, 5000)
-        $(".cover").removeClass(function(index, className) {
-            return (className.match(/(^|\s)color-\S+/g) || []).join(' ');
-        });
-        $(".cover").addClass("color-about")
-        $(".about").mousemove(function(e) {
-            var movementStrength = 25;
-            var height = movementStrength / $(window).height();
-            var width = movementStrength / $(window).width();
-            var pageX = 2 * (e.pageX - ($(window).width() / 1));
-            var pageY = 4 * (e.pageY - ($(window).height() / 1));
-            var newvalueX = width * pageX * 1;
-            var newvalueY = height * pageY * 1;
-            $('.about').css("background-position", newvalueX + "px     " + newvalueY + "px");
 
-        });
-        $(".line1, .line2, .line3, .line4").removeClass(function(index, className) {
-            return (className.match(/(^|\s)line-\S+/g) || []).join(' ');
-        });
-        $(".line1, .line2, .line3, .line4").addClass("line-about");
-    })
 
-    //clicking menu links
-    $('.homeLink').click(() => {
-        $(".cover").removeClass(function(index, className) {
-            return (className.match(/(^|\s)color-\S+/g) || []).join(' ');
-        });
-        $(".cover").addClass("color-landing")
-    });
 
-    $('.aboutLink').click(() => {
-        $(".cover").removeClass(function(index, className) {
-            return (className.match(/(^|\s)color-\S+/g) || []).join(' ');
-        });
-        $(".cover").addClass("color-about")
-    });
-
-    $('.skillsLink').click(() => {
-        $(".cover").removeClass(function(index, className) {
-            return (className.match(/(^|\s)color-\S+/g) || []).join(' ');
-        });
-        $(".cover").addClass("color-training")
-    });
 
   $(".contact").hover(function() {
-        if (document.getElementById("covercontact").className.split(" ").indexOf("startGrowcontact") < 0) {
-            setTimeout(function() { document.getElementById("covercontact").className += " startGrowcontact transition15", console.log(document.getElementById("covercontact").className) }, 700)
-        }
-        setTimeout(function() { document.getElementById("covercontact").classList.remove("transition15") }, 5000)
-               $(".cover").removeClass(function(index, className) {
-            return (className.match(/(^|\s)color-\S+/g) || []).join(' ');
-        });
-        $(".cover").addClass("color-contact")
+     
+
            $(".line1, .line2, .line3, .line4").removeClass(function(index, className) {
             return (className.match(/(^|\s)line-\S+/g) || []).join(' ');
         });
@@ -380,23 +478,8 @@ $(document).ready(function() {
 })
 
     $(".about").hover(function() {
-        setTimeout(function() { document.getElementById("coverAbout").className += " startGrowAbout transition15", console.log(document.getElementById("coverAbout").className) }, 700)
-        setTimeout(function() { document.getElementById("coverAbout").classList.remove("transition15") }, 5000)
-        $(".cover").removeClass(function(index, className) {
-            return (className.match(/(^|\s)color-\S+/g) || []).join(' ');
-        });
-        $(".cover").addClass("color-about")
-        $(".about").mousemove(function(e) {
-            var movementStrength = 25;
-            var height = movementStrength / $(window).height();
-            var width = movementStrength / $(window).width();
-            var pageX = 2 * (e.pageX - ($(window).width() / 1));
-            var pageY = 4 * (e.pageY - ($(window).height() / 1));
-            var newvalueX = width * pageX * 1;
-            var newvalueY = height * pageY * 1;
-            $('.about').css("background-position", newvalueX + "px     " + newvalueY + "px");
+     
 
-        });
         $(".line1, .line2, .line3, .line4").removeClass(function(index, className) {
             return (className.match(/(^|\s)line-\S+/g) || []).join(' ');
         });

@@ -188,10 +188,10 @@ video {
     z-index: 300;
     transition: 1s;
     display: none;
-      width: 49.2%;
-    height: 23.5vw;
+    width: 48.9%;
+    height: 23.3vw;
     position: absolute;
-    top: 48.2vw;
+    top: 48.8vw;
     left: 0.4vw;
 }
 
@@ -230,10 +230,10 @@ video {
     z-index: 300;
     transition: 1s;
     display: none;
-      width: 48.9%;
+       width: 48.9%;
     height: 23.3vw;
     position: absolute;
-    top: 48.5vw;
+    top: 48.8vw;
     left: 42.5vw;
 }
 
@@ -279,21 +279,89 @@ video {
         width: 100%;
         height: 33%
     }
+
+#stackStoreMessage {
+    transition: 1s;
+    display: none;
+    position: absolute;
+     width:99%;
+    height: 48.3vw;
+    background-color: rgb(0, 0, 0);
+    z-index: 300;
+    top: 94.4vw;
+    left: .4vw;
+    text-align: center;
+}
+#refineryMessage {
+    transition: 1s;
+    display: none;
+    position: absolute;
+    width:99%;
+    height: 48.3vw;
+    background-color: rgb(21,207,160);
+    z-index: 300;
+    top: 47.4vw;
+    left: .4vw;
+    text-align: center;
+}
+#NYGMessage {
+     background-color: rgb(69,195,254);
+    z-index: 300;
+    transition: 1s;
+    display: none;
+   width:99%;
+    height: 48.3vw;
+    position: absolute;
+    top: 190.5vw;
+    left: 0.4vw;
+}
+#weatherMessage {
+    transition: 1s;
+    display: none;
+    position: absolute;
+  width:99%;
+    height: 48.3vw;
+     background-color: rgb(2,31,134);
+    z-index: 300;
+    top: 141.5vw;
+    left: .4vw;
+    text-align: center;
+}
+#quoteMessage {
+    transition: 1s;
+    display: none;
+    position: absolute;
+ width:99%;
+    height: 48.3vw;
+      background-color: rgb(54,158,251);
+    z-index: 300;
+    top: 189.4vw;
+    left: .4vw;
+    text-align: center;
+}
+#battleMessage {
+    transition: 1s;
+    display: none;
+    position: absolute;
+ width:99%;
+    height: 48.3vw;
+    background-color: rgb(255, 255, 255);
+    z-index: 300;
+    top: 237.4vw;
+    left: .4vw;
+    text-align: center;
+}
+
+
+
+
 }
 
 @media screen and (max-width: 768px) {
     #video {
         float: left;
     }
-    .portfolioPortal {
-        overflow-y: auto;
-        margin-left: -33vw;
-        margin-top: 15vh;
-        position: relative;
-        background: transparent;
-        width: 66vw;
-        height: 48.1vh;
-    }
+
     video {
         float: top;
         margin-bottom: -5px;
@@ -302,4 +370,79 @@ video {
         width: 100%;
         height: 33%
     }
+
+    
+#stackStoreMessage {
+    transition: 1s;
+    display: none;
+    position: absolute;
+     width:99%;
+    height: 48.3vw;
+    background-color: rgb(0, 0, 0);
+    z-index: 300;
+    top: 94.4vw;
+    left: .4vw;
+    text-align: center;
+}
+#refineryMessage {
+    transition: 1s;
+    display: none;
+    position: absolute;
+    width:99%;
+    height: 48.3vw;
+    background-color: rgb(21,207,160);
+    z-index: 300;
+    top: 47.4vw;
+    left: .4vw;
+    text-align: center;
+}
+#NYGMessage {
+     background-color: rgb(69,195,254);
+    z-index: 300;
+    transition: 1s;
+    display: none;
+   width:99%;
+    height: 48.3vw;
+    position: absolute;
+    top: 190.5vw;
+    left: 0.4vw;
+}
+#weatherMessage {
+    transition: 1s;
+    display: none;
+    position: absolute;
+  width:99%;
+    height: 48.3vw;
+     background-color: rgb(2,31,134);
+    z-index: 300;
+    top: 141.5vw;
+    left: .4vw;
+    text-align: center;
+}
+#quoteMessage {
+    transition: 1s;
+    display: none;
+    position: absolute;
+ width:99%;
+    height: 48.3vw;
+      background-color: rgb(54,158,251);
+    z-index: 300;
+    top: 189.4vw;
+    left: .4vw;
+    text-align: center;
+}
+#battleMessage {
+    transition: 1s;
+    display: none;
+    position: absolute;
+ width:99%;
+    height: 48.3vw;
+    background-color: rgb(255, 255, 255);
+    z-index: 300;
+    top: 237.4vw;
+    left: .4vw;
+    text-align: center;
+}
+
+
 }
