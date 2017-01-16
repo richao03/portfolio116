@@ -367,6 +367,22 @@ $(document).ready(function() {
 })
 
 $(document).ready(function() {
+	$('.skillsIcon').hover(function(){
+	$(this).addClass("animated bounce")
+	console.log(this)
+	},	
+	(function(){
+	$(this).removeClass("animated bounce")
+	console.log(this)
+	}))
+
+	// 	$('.skillsIcon').mouseover(function(){
+	// $(this).addClass("animated bounce")
+	// console.log(this)
+	// })
+
+})
+$(document).ready(function() {
     setTimeout(function() { document.getElementById("linevert1").className += " linevert1" }, 300)
     setTimeout(function() { document.getElementById("linevert2").className += " linevert2" }, 300)
     setTimeout(function() { document.getElementById("linevert3").className += " linevert3" }, 300)

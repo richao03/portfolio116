@@ -17,13 +17,17 @@
     margin-top:15vh;
     margin-left: 19vw;
     font-family: 'VT323', serif;
-    color: rgb(117,28,29);
+   /* color: rgb(117,28,29);*/
+      color: rgb(0,0,0);
     z-index: 101;
     position: absolute;
 
 
 }
 
+.trophy{
+    height:40px !important;
+}
   
 .color-aboutColor{
        border-color: #38c9f4 !important;
@@ -79,6 +83,7 @@ and (max-device-width : 667px) {
     margin-top:25vh;
     margin-left: 19vw;
     font-family: 'VT323', serif;
+ /*   color: rgb(117,28,29);*/
     color: rgb(117,28,29);
     z-index: 101;
     position: absolute;
