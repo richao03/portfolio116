@@ -89,9 +89,7 @@ $(document).ready(function() {
 
     $(".skills").hover(function() {
       
-        setTimeout(function() { $("#skillsPortal").css("visibility", "visible") }, 3000)
-        setTimeout(function() { $("#skillsPortal").css("display", "block") }, 200)
-        setTimeout(function() { $("#skillsPortal").css("opacity", "1") }, 3000)
+
        
         $(".line1, .line2, .line3, .line4").removeClass(function(index, className) {
             return (className.match(/(^|\s)line-\S+/g) || []).join(' ');

@@ -1,131 +1,3 @@
-
-            $(document).scroll(function() {
-              
-                if ($(window).width() < 666) {      
-                    scroll_pos = $(this).scrollTop();
-                    
-                    if (scroll_pos < 344) {
-                   
-                        $(".cover").removeClass(function(index, className) {
-                            return (className.match(/(^|\s)color-\S+/g) || []).join(' ');
-                        });
-                        $(".cover").addClass("color-landing")
-                    } else
-
-                    if (scroll_pos > 345 && scroll_pos < 879) {
-                        
-                        if (document.getElementById("coverAbout").className.split(" ").indexOf("startGrowAbout") < 0) {
-                            
-                            setTimeout(function() { document.getElementById("coverAbout").className += " startGrowAbout transition15" }, 1500)
-                        }
-                        setTimeout(function() { document.getElementById("coverAbout").classList.remove("transition15") }, 3000)
-                        $(".cover").removeClass(function(index, className) {
-                            return (className.match(/(^|\s)color-\S+/g) || []).join(' ');
-                        });
-                        $(".cover").addClass("color-about")
-                    } else
-
-                    if (scroll_pos > 880 && scroll_pos < 1617) {
-                      
-                        setTimeout(function() { $("#skillsPortal").css("visibility", "visible") }, 3000)
-                        setTimeout(function() { $("#skillsPortal").css("display", "block") }, 200)
-                        setTimeout(function() { $("#skillsPortal").css("opacity", "1") }, 3000)
-                        if (document.getElementById("coverskills").className.split(" ").indexOf("startGrowskills") < 0) {
-                           
-                            setTimeout(function() { document.getElementById("coverskills").className += " startGrowskills transition15" }, 1500)
-                        }
-                        setTimeout(function() { document.getElementById("coverskills").classList.remove("transition15") }, 3000)
-                        $(".cover").removeClass(function(index, className) {
-                            return (className.match(/(^|\s)color-\S+/g) || []).join(' ');
-                        });
-                        $(".cover").addClass("color-training")
-
-                    } else
-
-                    if (scroll_pos > 1618 && scroll_pos < 2758) {
-                        $(".cover").removeClass(function(index, className) {
-                            return (className.match(/(^|\s)color-\S+/g) || []).join(' ');
-                        });
-                        $(".cover").addClass("color-portfolio")
-                    } else
-
-                    if (scroll_pos > 2759) {
-                        if (document.getElementById("covercontact").className.split(" ").indexOf("startGrowcontact") < 0) {
-                            setTimeout(function() { document.getElementById("covercontact").className += " startGrowcontact transition15" }, 1500)
-                        }
-                        setTimeout(function() { document.getElementById("covercontact").classList.remove("transition15") }, 3000)
-                        $(".cover").removeClass(function(index, className) {
-                            return (className.match(/(^|\s)color-\S+/g) || []).join(' ');
-                        });
-                        $(".cover").addClass("color-contact")
-                    }
-
-
-
-                } else {  
-                		scroll_pos = $(this).scrollTop();
-                   
-                        if (scroll_pos < 299) {
-
-
-                            $(".cover").removeClass(function(index, className) {
-                                return (className.match(/(^|\s)color-\S+/g) || []).join(' ');
-                            });
-                            $(".cover").addClass("color-landing")
-                        } else
-
-                        if (scroll_pos > 300 && scroll_pos < 980) {
-                       
-                        if (document.getElementById("coverAbout").className.split(" ").indexOf("startGrowAbout") < 0) {
-                           
-                            setTimeout(function() { document.getElementById("coverAbout").className += " startGrowAbout transition15" }, 1500)
-                        }
-                        setTimeout(function() { document.getElementById("coverAbout").classList.remove("transition15") }, 3000)
-                            $(".cover").removeClass(function(index, className) {
-                                return (className.match(/(^|\s)color-\S+/g) || []).join(' ');
-                            });
-                            $(".cover").addClass("color-about")
-                        } else
-
-                        if (scroll_pos > 981 && scroll_pos < 2296) {
-                            setTimeout(function() { $("#skillsPortal").css("visibility", "visible") }, 3000)
-                            setTimeout(function() { $("#skillsPortal").css("display", "block") }, 200)
-                            setTimeout(function() { $("#skillsPortal").css("opacity", "1") }, 3000)
-  
-                            if (document.getElementById("coverskills").className.split(" ").indexOf("startGrowskills") < 0) {
-                                setTimeout(function() { document.getElementById("coverskills").className += " startGrowskills transition15" }, 500)
-                            }
-                            setTimeout(function() { document.getElementById("coverskills").classList.remove("transition15")}, 7000)
-                            $(".cover").removeClass(function(index, className) {
-                                return (className.match(/(^|\s)color-\S+/g) || []).join(' ');
-                            });
-                            $(".cover").addClass("color-training")
-                        } else
-
-                        if (scroll_pos > 2297 && scroll_pos < 2650) {
-                            $(".cover").removeClass(function(index, className) {
-                                return (className.match(/(^|\s)color-\S+/g) || []).join(' ');
-                            });
-                            $(".cover").addClass("color-portfolio")
-                        } else
-
-                        if (scroll_pos  + $(window).height() == $(document).height()) {
-                            if (document.getElementById("covercontact").className.split(" ").indexOf("startGrowcontact") < 0) {
-                                setTimeout(function() { document.getElementById("covercontact").className += " startGrowcontact transition15" }, 700)
-                            }
-                            setTimeout(function() { document.getElementById("covercontact").classList.remove("transition15") }, 5000)
-                            $(".cover").removeClass(function(index, className) {
-                                return (className.match(/(^|\s)color-\S+/g) || []).join(' ');
-                            });
-                            $(".cover").addClass("color-contact")
-                        }
-
-
-                    };
-                })
-
-
-
 /* ===========================================================
  * jquery-interactive_bg.js v1.0
  * ===========================================================
@@ -279,44 +151,6 @@
   
 }(window.jQuery);
 $(document).ready(function() {
-    $('.homeLink').click(() => {
-        $(".cover").removeClass(function(index, className) {
-            return (className.match(/(^|\s)color-\S+/g) || []).join(' ');
-        });
-        $(".cover").addClass("color-landing")
-    });
-
-    $('.aboutLink').click(() => {
-        $(".cover").removeClass(function(index, className) {
-            return (className.match(/(^|\s)color-\S+/g) || []).join(' ');
-        });
-        $(".cover").addClass("color-about")
-    });
-
-    $('.skillsLink').click(() => {
-        $(".cover").removeClass(function(index, className) {
-            return (className.match(/(^|\s)color-\S+/g) || []).join(' ');
-        });
-        $(".cover").addClass("color-training")
-    });
-
-    $('.portfolioLink').click(() => {
-        $(".cover").removeClass(function(index, className) {
-            return (className.match(/(^|\s)color-\S+/g) || []).join(' ');
-        });
-        $(".cover").addClass("color-portfolio")
-    });
-
-    $('.contactLink').click(() => {
-        $(".cover").removeClass(function(index, className) {
-            return (className.match(/(^|\s)color-\S+/g) || []).join(' ');
-        });
-        $(".cover").addClass("color-contact")
-    });
-
-})
-
-$(document).ready(function() {
     $(".hoverStackStore").hover(function() {
         $('#refineryMessage').css("display", "block")
     }, function() {
@@ -324,18 +158,14 @@ $(document).ready(function() {
     });
 
 
-    // $(".hoverRefinery").hover(function() {
-    //     document.getElementById('sideBox').innerHTML = "ThIS IS Refinery!"
-    // });
+
     $(".hoverRefinery").hover(function() {
         $('#stackStoreMessage').css("display", "block")
     }, function() {
         $('#stackStoreMessage').css("display", "none")
     });
 
-    // $(".hoverNYG").hover(function() {
-    //     document.getElementById('sideBox').innerHTML = "ThIS IS NYG!"
-    // });
+
 
     $(".hoverNYG").hover(function() {
     $('#weatherMessage').css("display", "block")
@@ -343,9 +173,6 @@ $(document).ready(function() {
         $('#weatherMessage').css("display", "none")
     });
 
-    // $(".hoverWeather").hover(function() {
-    //     document.getElementById('sideBox').innerHTML = "ThIS IS weather!"
-    // });
 
     $(".hoverWeather").hover(function() {
     	    $('#NYGMessage').css("display", "block")
@@ -354,17 +181,11 @@ $(document).ready(function() {
     });
         
 
-    // $(".hoverQuote").hover(function() {
-    //     document.getElementById('sideBox').innerHTML = "ThIS IS Quote!"
-    // });
     $(".hoverQuote").hover(function() {
     $('#battleMessage').css("display", "block")
     }, function() {
         $('#battleMessage').css("display", "none")
     });
-    // $(".hoverBattle").hover(function() {
-    //     document.getElementById('sideBox').innerHTML = "ThIS IS chat!"
-    // });
 
     $(".hoverBattle").hover(function() {
     	     $('#quoteMessage').css("display", "block")
@@ -372,6 +193,80 @@ $(document).ready(function() {
         $('#quoteMessage').css("display", "none")
     });
        
+
+})
+
+$(document).ready(function() {
+    var about = document.getElementById("coverAbout");
+    //init 
+    var controller = new ScrollMagic.Controller();
+
+
+    //build
+
+    var aboutPortal = new ScrollMagic.Scene({
+            triggerElement: '.coverAbout',
+            reverse: false,
+
+        })
+        .setClassToggle(".coverAbout", "startGrowAbout")
+        .addTo(controller);
+
+
+    var aboutColor = new ScrollMagic.Scene({
+            triggerElement: ".coverAbout",
+            duration: $('div-id').height()
+        })
+        .setClassToggle(".cover", "color-about")
+        .addTo(controller);
+
+
+
+
+
+    var SkillsPortal = new ScrollMagic.Scene({
+            triggerElement: '.coverskills',
+            reverse: false
+        })
+        .setClassToggle(".coverskills", "startGrowskills")
+        .addTo(controller);
+
+
+    var SkillsColor = new ScrollMagic.Scene({
+            triggerElement: ".coverskills",
+            duration: $('coverskills').height()
+
+        })
+        .setClassToggle(".cover", "color-skills")
+        .addTo(controller);
+
+    var SkillsPortal1 = new ScrollMagic.Scene({
+            triggerElement: ".coverskills"
+        })
+        .on('start', function() {
+            console.log("we in here")
+            setTimeout(function() { $("#skillsPortal").css("visibility", "visible") }, 1000)
+            setTimeout(function() { $("#skillsPortal").css("display", "block") }, 200)
+            setTimeout(function() { $("#skillsPortal").css("opacity", "1") }, 1000)
+
+        })
+        .addTo(controller);
+
+
+    var portfolioPortal = new ScrollMagic.Scene({
+            triggerElement: '.coverportfolio',
+            duration: $('.coverportfolio').height()
+        })
+        .setClassToggle(".cover", "color-portfolio")
+        .addTo(controller);
+
+    var contact = new ScrollMagic.Scene({
+            triggerElement: '.contact',
+            duration: $('div-id').height()
+        })
+        .setClassToggle(".cover", "color-contact")
+        .addTo(controller);
+
 
 })
 
@@ -385,10 +280,6 @@ $(document).ready(function() {
 	
 	}))
 
-	// 	$('.skillsIcon').mouseover(function(){
-	// $(this).addClass("animated bounce")
-	// console.log(this)
-	// })
 
 })
 $(document).ready(function() {
@@ -482,9 +373,7 @@ $(document).ready(function() {
 
     $(".skills").hover(function() {
       
-        setTimeout(function() { $("#skillsPortal").css("visibility", "visible") }, 3000)
-        setTimeout(function() { $("#skillsPortal").css("display", "block") }, 200)
-        setTimeout(function() { $("#skillsPortal").css("opacity", "1") }, 3000)
+
        
         $(".line1, .line2, .line3, .line4").removeClass(function(index, className) {
             return (className.match(/(^|\s)line-\S+/g) || []).join(' ');

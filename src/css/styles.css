@@ -9,13 +9,13 @@
 /*
 //#38c9f4
 */
-.color-training {
+.color-skills {
   transition: border-color 1s ease;
   border-color: #929192 !important; }
 
 .color-contact {
   transition: border-color 1s ease;
-  border-color: black !important; }
+  border-color: #1f1f1f !important; }
 
 .color-portfolio {
   transition: border-color 1s ease;
@@ -119,13 +119,13 @@
 /*
 //#38c9f4
 */
-.color-training {
+.color-skills {
   transition: border-color 1s ease;
   border-color: #929192 !important; }
 
 .color-contact {
   transition: border-color 1s ease;
-  border-color: black !important; }
+  border-color: #1f1f1f !important; }
 
 .color-portfolio {
   transition: border-color 1s ease;
@@ -266,13 +266,13 @@ a:hover {
 /*
 //#38c9f4
 */
-.color-training {
+.color-skills {
   transition: border-color 1s ease;
   border-color: #929192 !important; }
 
 .color-contact {
   transition: border-color 1s ease;
-  border-color: black !important; }
+  border-color: #1f1f1f !important; }
 
 .color-portfolio {
   transition: border-color 1s ease;
@@ -361,13 +361,13 @@ a:hover {
 /*
 //#38c9f4
 */
-.color-training {
+.color-skills {
   transition: border-color 1s ease;
   border-color: #929192 !important; }
 
 .color-contact {
   transition: border-color 1s ease;
-  border-color: black !important; }
+  border-color: #1f1f1f !important; }
 
 .color-portfolio {
   transition: border-color 1s ease;
@@ -613,13 +613,13 @@ a:hover {
 /*
 //#38c9f4
 */
-.color-training {
+.color-skills {
   transition: border-color 1s ease;
   border-color: #929192 !important; }
 
 .color-contact {
   transition: border-color 1s ease;
-  border-color: black !important; }
+  border-color: #1f1f1f !important; }
 
 .color-portfolio {
   transition: border-color 1s ease;
@@ -734,6 +734,11 @@ a:hover {
   -webkit-transition-duration: 2s;
   -webkit-transition-delay: 2s;
   transition: 2s; }
+
+.transition10 {
+  -webkit-transition-duration: 3s;
+  -webkit-transition-delay: 3s;
+  transition: 3s; }
 
 .words {
   width: 55vw;

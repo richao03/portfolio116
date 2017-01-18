@@ -8,9 +8,5 @@ $(document).ready(function() {
 	
 	}))
 
-	// 	$('.skillsIcon').mouseover(function(){
-	// $(this).addClass("animated bounce")
-	// console.log(this)
-	// })
 
 })
