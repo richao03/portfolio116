@@ -46,7 +46,6 @@ $(document).ready(function() {
             triggerElement: ".coverskills"
         })
         .on('start', function() {
-            console.log("we in here")
             setTimeout(function() { $("#skillsPortal").css("visibility", "visible") }, 1000)
             setTimeout(function() { $("#skillsPortal").css("display", "block") }, 200)
             setTimeout(function() { $("#skillsPortal").css("opacity", "1") }, 1000)
