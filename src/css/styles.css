@@ -47,6 +47,10 @@
   position: relative;
   display: table; }
 
+.monkIcon, .trophyIcon, .cardIcon {
+  color: white;
+  text-shadow: -1px 0 #FFD700, 0 1px #FFD700, 1px 0 #FFD700, 0 -1px #FFD700; }
+
 .aboutwords {
   margin-top: 15vh;
   margin-left: 19vw;
@@ -58,6 +62,47 @@
 
 .trophy {
   height: 40px !important; }
+
+.monk {
+  height: 40px !important;
+  opacity: 0;
+  transition: visibility 0s, opacity 1s linear; }
+
+.trophy {
+  height: 40px !important;
+  opacity: 0; }
+
+.cards {
+  height: 40px !important;
+  opacity: 0;
+  margin-left: -15px;
+  transition: margin-left .3s linear; }
+
+.afterCards {
+  margin-left: 15px;
+  opacity: 1; }
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, -1px, 0); }
+  20%,
+  80% {
+    transform: translate3d(1px, 2px, 0); }
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-2px, 4px, 0); }
+  40%,
+  60% {
+    transform: translate3d(2px, 4px, 0); } }
+
+.shaking {
+  opacity: 1;
+  animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97); }
+
+.appear {
+  opacity: 1; }
 
 .color-aboutColor {
   border-color: #38c9f4 !important; }

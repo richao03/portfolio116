@@ -9,7 +9,26 @@ $(document).ready(function() {
      setTimeout(function() { document.getElementById("coverWindow").className += " startGrow transition15" }, 4500)
         setTimeout(function() { document.getElementById("coverWindow").classList.remove("transition15") }, 7000)
 
+    $(".monkIcon").hover(function(){
+        $(".monk").addClass("appear")
+    }, function(){
+        $(".monk").removeClass("appear")
+    })
 
+    $(".trophyIcon").hover(function(){
+        
+    setTimeout(function() { document.getElementById("trophy1").className += " shaking" }, 300)
+    setTimeout(function() { document.getElementById("trophy2").className += " shaking" }, 500)
+    setTimeout(function() { document.getElementById("trophy3").className += " shaking" }, 700)
+    }, function(){
+        $(".trophy").removeClass("shaking")
+    })
+
+    $(".cardIcon").hover(function(){
+        $(".cards").addClass("afterCards")
+    }, function(){
+        $(".cards").removeClass("afterCards")
+    })
 
     //INTERACTIVE BACKGROUND  
     $(".overlay").hover(function() {
