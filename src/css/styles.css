@@ -48,8 +48,7 @@
   display: table; }
 
 .monkIcon, .trophyIcon, .cardIcon {
-  color: white;
-  text-shadow: -1px 0 #FFD700, 0 1px #FFD700, 1px 0 #FFD700, 0 -1px #FFD700; }
+  color: #800000 !important; }
 
 .aboutwords {
   margin-top: 15vh;
@@ -200,7 +199,7 @@
   display: table; }
 
 .contactwords {
-  margin-top: 25vh;
+  margin-top: 27.5vh;
   margin-left: 19vw;
   font-family: 'VT323', serif;
   color: white;
@@ -246,13 +245,15 @@
   width: 17vw;
   z-index: 200;
   position: fixed;
-  -webkit-transition-duration: .5s; }
+  -webkit-transition-duration: .5s;
+  -webkit-backface-visibility: hidden; }
 
 .menu:hover {
   cursor: pointer;
   color: white;
   font-weight: bolder;
-  -webkit-transition-duration: .5s; }
+  -webkit-transition-duration: .5s;
+  -webkit-backface-visibility: hidden; }
 
 .menuBurger {
   position: absolute;
@@ -261,7 +262,8 @@
   z-index: 300;
   color: grey;
   display: table-cell;
-  -webkit-transition-duration: .5s; }
+  -webkit-transition-duration: .5s;
+  -webkit-backface-visibility: hidden; }
 
 .menuBurger:hover {
   color: white; }
@@ -274,7 +276,8 @@
   margin-top: 5.5vh;
   margin-left: -15vw;
   color: black;
-  -webkit-transition-duration: .5s; }
+  -webkit-transition-duration: .5s;
+  -webkit-backface-visibility: hidden; }
 
 .menuList {
   padding-left: 3px; }
@@ -298,7 +301,8 @@ a:hover {
     margin-top: 13vh;
     color: black;
     margin-left: -35vw;
-    -webkit-transition-duration: .5s; } }
+    -webkit-transition-duration: .5s;
+    -webkit-backface-visibility: hidden; } }
 
 .color-landing {
   transition: border-color 1s ease;
@@ -787,7 +791,7 @@ a:hover {
 
 .words {
   width: 55vw;
-  margin-top: 45vh;
+  margin-top: 48vh;
   margin-left: 20vw;
   font-size: 24pt !important;
   font-family: 'Josefin Slab', serif;

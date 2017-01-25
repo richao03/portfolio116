@@ -9,6 +9,7 @@
     z-index: 200;
     position: fixed;
     -webkit-transition-duration: .5s;
+    -webkit-backface-visibility: hidden;
 }
 
 .menu:hover {
@@ -16,6 +17,7 @@
     color: white;
     font-weight: bolder;
     -webkit-transition-duration: .5s;
+    -webkit-backface-visibility: hidden;
 }
 
 .menuBurger {
@@ -26,6 +28,7 @@
     color: grey;
     display: table-cell;
     -webkit-transition-duration: .5s;
+    -webkit-backface-visibility: hidden;
 }
 
 .menuBurger:hover {
@@ -41,6 +44,7 @@
     margin-left: -15vw;
     color: black;
     -webkit-transition-duration: .5s;
+    -webkit-backface-visibility: hidden;
 }
 
 
@@ -72,5 +76,6 @@ a:hover {
         color: black;
         margin-left: -35vw;
         -webkit-transition-duration: .5s;
+    -webkit-backface-visibility: hidden;
     }
 }
