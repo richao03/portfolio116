@@ -47,7 +47,7 @@ gulp.task('connect',()=>{
 
 gulp.task('watch',()=>{
 	console.log("we are watching")
-	gulp.watch(['src/app.js','index.html', 'src/sass/*','src/js/*'], ['es6','log','sassComp','jsComp'])
+	gulp.watch(['src/index.html', 'src/sass/*','src/js/*'], ['es6','log','sassComp','jsComp'])
 })
 
 //everytime src/app.js changes, it will run the task 'es6'

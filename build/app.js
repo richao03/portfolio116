@@ -1,14 +1,14 @@
-'use strict';
+const express = require('express')
+const path = require('path')
+let app = express();
 
-var express = require('express');
-var path = require('path');
-var app = express();
+app.use(express.static(path.join(__dirname, 'src')));
 
 app.get('/', function (req, res) {
-	res.sendFile(path.join(__dirname, '../index.html'));
-});
+		res.sendFile(path.join(__dirname, 'src/index.html'));
+})
 
-var port = process.env.PORT || 1337;
-app.listen(port, function () {
-	console.log("Please come find me at port " + port + "!");
-});
+let port = process.env.PORT || 1337
+app.listen(port, () => {
+		console.log("Please come find me at port " + port + "!")
+})

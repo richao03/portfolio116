@@ -1,0 +1,15 @@
+{
+  "html": {
+    "indent_char": " ",
+    "indent_size": 2
+  },
+  "js": {
+    "brace_style": "collapse,preserve-inline",
+    "indent_char": " ",
+    "indent_size": 2
+  },
+  "css":{
+      "indent_char": " ",
+      "indent_size": 2
+  }
+}

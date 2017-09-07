@@ -1,250 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html ng-app="kardRestApi" ng-strict-di xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-    <link href='https://fonts.googleapis.com/css?family=Josefin+Slab:300' rel='stylesheet' type='text/css'>
-    <link href="https://fonts.googleapis.com/css?family=Francois+One|VT323" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="css/styles.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
-    <script src="../mainjs/mainJs.js"></script>
-    <script src="https://cdn.jsdelivr.net/jquery.typeit/4.3.0/typeit.min.js"></script>
-    <link rel=icon href=../img/favicon.ico>
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <title>Rich Chao Portfolio</title>
+  <script async="" defer="" src="//survey.g.doubleclick.net/async_survey?site=dzuxz4dhe3pkenvh5o7aygljou"></script>
+  <meta charset="utf-8">
+  <title>Kard - Rewards made simple</title>
+  <meta name="description" content="Kard is a fully automated tool designed to notify you of the best deals across all of your credit cards in real-time.">
+  <meta name="fo-verify" content="f6942ab5-51c1-4d7c-b144-3cad9f7c4bde">
+  <meta property="og:image" content="img/meta/social_meta_share.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+  <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/aobjnoenheahddafgpcinhgeffgcmpck">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+  <link href="../css/styles.css" rel="stylesheet">
+  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=138593263212079&ev=PageView&noscript=1"
+        /></noscript>
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <script src="//load.sumome.com/" data-sumo-site-id="dcb67abd9c8bb9bcd6eb8f3e78efc934ac6b0eed26593c9a431ecbcab4ed9809" async="async"></script>
+  <!-- TradeDoubler site verification 2946620 -->
 </head>
 
 <body>
-<!-- 
-*************************************************************************************
-                                   DONT COME IN!!!
-                                  IM NOT DRESSED!!!
-*************************************************************************************  
--->
-    <div>
+  <!--[if lt IE 10]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
 
 
+  <div id="main-wrapper">
+    <div class="top-bar">
+      <ul class="top-bar-buttons-right">
+        <li><a href="https://app.getkard.com/#/login">Login</a></li>
+        <li><a href="https://www.getkard.com/about.html">About</a></li>
+        <li><a href="https://www.getkard.com/faq.html">FAQ</a></li>
+        <li><a href="https://www.getkard.com/blog/">Blog</a></li>
 
-        <div class="overlay landing transition15 " id="home">
-            <div class="menu transition15">
-                <div class="menuPane ">
-                    <a href="#home" class="homeLink">
-                        <ul class="menuList">Home</ul>
-                    </a>
-                    <a href="#about" class="aboutLink">
-                        <ul class="menuList">About</ul>
-                    </a>
-                    <a href="#skills" class="skillsLink">
-                        <ul class="menuList">Skills</ul>
-                    </a>
-                    <a href="#portfolio" class="portfolioLink">
-                        <ul class="menuList">Portfolio</ul>
-                    </a>
-                    <a href="#contact" class="contactLink">
-                        <ul class="menuList">Contact</ul>
-                    </a>
-                </div>
-                <div class="menuBurger">
-                    ____________
-                    <br> ____________
-                    <br>____________
-                </div>
-            </div>
-            <div class="line1" id="linevert1"></div>
-            <div class="line2" id="linevert2"></div>
-            <div class="line3" id="linevert3"></div>
-            <div class="line4" id="linevert4"></div>
-            <div class="col-lg-12 no-pad">
-                <span class="type-it words"></span>
-                <div class="coverWindow cover color-landing" id="coverWindow">
-                    <div class="portal"></div>
-                </div>
-            </div>
-        </div>
-        <div class="about" id="about">
-            <div class="col-lg-12 no-pad">
-                <div class="aboutwords">
-                <h2 class="about-it "></h2>
-                    <h3>Born in a PC family, adopted by macOS, raised in Node</h3>
-                    <h3>Classically trained in Javascript (read: self taught)</h3>
-                    <h3>Forged in the chambers of <a class="monkIcon">Fullstack Academy in NYC </a><img class="monk" src="img/monk.png"/></h3>
-                    <h2>Fantasy Football <a class="trophyIcon">Champion</a> <img class="trophy" id="trophy1" src="img/trophy.png"/><img class="trophy" id="trophy2" src="img/trophy.png"/><img class="trophy" id="trophy3" src="img/trophy.png"/></h2>
-                    <h3>2 time redraft champion, innagural dynasty champion of "Keepin' it Veal" 
-                    <h2>Amateur <a class="cardIcon">Magician</a> <img class="trophy cards" src="img/cards.png"/></h2>
-                    <h3>Secret member of the Secret Guild of Magicians that may or may not exist </h3>
-                </div>
-                <div class="coverAbout cover color-landing transition15" id="coverAbout">
-                    <div class="aboutPortal">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="skills" id="skills">
-            <div class="col-lg-12 no-pad">
-                <div class="skillswords">
-                    <h2>Besides nunchuck skills, bowstaff skills, I am also well versed in the following:</h2>
-                </div>
-                <div class="coverskills cover transition15" id="coverskills">
-                    <div class="skillsPortal transition10" id="skillsPortal">
-                        <div class="skillset1">
-                            <div class="skillsIcon HTML"></div>
-                            <div class="skillsIcon CSS"></div>
-                            <div class="skillsIcon Javascript"></div>
-                        </div>
-                        <div class="skillset2">
-                            <div class="skillsIcon React"></div>
-                            <div class="skillsIcon Angular"></div>
-                            <div class="skillsIcon GitHub"></div>
-                        </div>
-                        <div class="skillset3">
-                            <div class="skillsIcon Jquery"></div>
-                            <div class="skillsIcon Gulp"></div>
-                            <div class="skillsIcon Node"></div>
-                        </div>
-                        <div class="skillset4">
-                            <div class="skillsIcon Sass"></div>
-                            <div class="skillsIcon Aws"></div>
-                            <div class="skillsIcon Bootstrap"></div>
-                        </div>
-                        <div class="coverskills1">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="portfolio" id="portfolio">
-            <div class="col-lg-12 no-pad">
-                <div class="coverportfolio cover" id="coverportfolio">
-                    <div class="portfolioPortal">
-                        <h2 class="portfolioWords">Portfolio:</h2>
-                        <div class="stackStore" id="stackStore">
-                            <div id="videoBlock">
-                                <a class="hoverStackStore" id="hoverStackStore" href="https://real-estate-stackstore.herokuapp.com/">
-                                    <video preload="preload" id="video" autoplay="autoplay" loop="loop">
-                                        <!--      <source src="/videos/t12.webm" type="video/webm"></source> -->
-                                        <source src="/videos/stackStore480.mp4" type="video/mp4"></source>
-                                    </video>
-                                    <div id="stackStoreMessage">
-                                        <ul>
-                                            <h1>WebRefinery >>>>>>>>>>></h1>
-                                            <h2>A drag and drop website designing web application</h2>
-                                            <h2>Simplifies and streamlines web design for the average user</h2>
-                                            <h2>Developed in JavaScript with  jQuery, Node.js, Express, AngularJS, SQL</h2> </ul>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="refinery" id="refinery">
-                            <div id="videoBlock">
-                                <a class="hoverRefinery" id="hoverRefinery" href="https://webrefinery.herokuapp.com/">
-                                    <video preload="preload" id="video" autoplay="autoplay" loop="loop">
-                                        <!--      <source src="/videos/t12.webm" type="video/webm"></source> -->
-                                        <source src="/videos/refinery480.mp4" type="video/mp4"></source>
-                                    </video>
-                                    <div id="refineryMessage">
-                                        <ul>
-                                            <h1><<<<<<<<<<<< Real Estate Store</h1>
-                                            <h2>Full stack developed e-Commerce store for the sale and purchase of real estate properties </h2>
-                                            <h2>Purchaser cart and checkout functionality, along with admin panel for membership management</h2>
-                                            <h2>Developed in Node.js, AngularJS, Express, SQL</h2> </ul>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="NYG" id="NYG">
-                            <div id="videoBlock">
-                                <a class="hoverNYG" id="hoverNYG" href="https://nygeli.herokuapp.com/">
-                                    <video preload="preload" id="video" autoplay="autoplay" loop="loop">
-                                        <!--      <source src="/videos/t12.webm" type="video/webm"></source> -->
-                                        <source src="/videos/nyg480.mp4" type="video/mp4"></source>
-                                    </video>
-                                    <div id="NYGMessage">
-                                        <ul>
-                                            <h1>Real Time Weather>>>>>>>>>>></h1>
-                                            <h2>Wearther App utitlizing weather API for real time reading</h2>
-                                            <h2>Weather responsive background </h2>
-                                            <h2>Developed in HTML CSS Javascript</h2> </ul>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="weather" id="weather">
-                            <div id="videoBlock">
-                                <a class="hoverWeather" id="hoverWeather" href="http://codepen.io/richao03/full/grvYeO/">
-                                    <video preload="preload" id="video" autoplay="autoplay" loop="loop">
-                                        <!--      <source src="/videos/t12.webm" type="video/webm"></source> -->
-                                        <source src="/videos/weather480.mp4" type="video/mp4"></source>
-                                    </video>
-                                    <div id="weatherMessage">
-                                        <ul>
-                                            <h1><<<<<<<<<<<<  New York Giants</h1>
-                                            <h2>Unique front-end oriented tribute page for the New York Giants football players</h2>
-                                            <h2>Developed in CSS3, HTML5, jQuery, Node.js </h2> </ul>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="quote" id="quote">
-                            <div id="videoBlock">
-                                <a class="hoverQuote" id="hoverQuote" href="http://codepen.io/richao03/full/pywbgv/">
-                                    <video preload="preload" id="video" autoplay="autoplay" loop="loop">
-                                        <!--      <source src="/videos/t12.webm" type="video/webm"></source> -->
-                                        <source src="/videos/quote480.mp4" type="video/mp4"></source>
-                                    </video>
-                                    <div id="quoteMessage">
-                                        <ul>
-                                            <h1>Battle Chat>>>>>>>>>>></h1>
-                                            <h2>Real time freestyle battle application</h2>
-                                            <h2>Notifies user when opponent stops typing </h2>
-                                            <h2>Developed in HTML CSS Javascript ReactJS and Socket.io</h2>
-                                        </ul>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="battle" id="battle">
-                            <div id="videoBlock">
-                                <a class="hoverBattle" id="hoverBattle" href="https://battlechat.herokuapp.com/">
-                                    <video preload="preload" id="video" autoplay="autoplay" loop="loop">
-                                        <!--      <source src="/videos/t12.webm" type="video/webm"></source> -->
-                                        <source src="/videos/battleChat480.mp4" type="video/mp4"></source>
-                                    </video>
-                                    <div id="battleMessage">
-                                        <ul>
-                                            <h1><<<<<<<<<<<< Random Quote Generator</h1>
-                                            <h2>Developed in Vanilla Javascript</h2>
-                                            <h2>Need Motivation? check out this app!</h2>
-                                            <h2>Love the quotes? share it on twitter!</h2>
-                                        </ul>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="contact" id="contact">
-            <div class="col-lg-12 no-pad">
-                <div class="contactwords">
-                    <h1>Contact Me: <img class="imageCircle" src="/img/contactFace.jpg" title="hilariously handsome!"></h1>
-                    <h2>Send me an Email:  <a href= "mailto:r.chao03@gmail.com" ><img class="imageCircle"  src="img/contactEmail.png"></a></h2>
-                    <h2>Find me on linkedIn: <a href="https://www.linkedin.com/in/richard-chao247"> <img class="imageCircle"  src="img/contactLinked.png"></a></h2>
-                    <h2>Follow my cat on Instagram: <a href="https://www.instagram.com/life_and_times_of_evee/"><img class="imageCircle"  src="img/contactGram.png"></a></h2>
-          
-                </div>
-                <div class="covercontact cover color-landing" id="covercontact">
-                    <div class="contactPortal">
-                    </div>
-                </div>
-            </div>
-        </div>
+      </ul>
     </div>
-    
+  </div>
+
+
 </body>
 
 </html>
