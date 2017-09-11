@@ -1,18 +1,32 @@
 html,
 body {
   font-family: 'Lato', sans-serif;
-  background-color: #ECEDED;
+  background-color: #FFF;
 }
 
-.top-bar{
-  width:100%;
-  border:1px solid blue;
-  height:2em;
+#main-wrapper {
+  width: 100%;
 }
 
-ul.top-bar-buttons-right li{
-  display:inline;
-  width:auto;
-  margin-left:1em;
-  float:right;
+
+.top-bar {
+  height: 2em;
+  width:90%;
+  margin:auto;
+}
+
+ul.top-bar-buttons-right li {
+  display: inline;
+  width: auto;
+  margin-left: 1em;
+  float: right;
+
+}
+li a {
+  text-decoration: none !important;
+}
+
+.top-bar-icon-left {
+  display: inline;
+  float: left;
 }

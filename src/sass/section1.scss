@@ -1,0 +1,70 @@
+.section1 {
+  background-image: url("../img/section1BG.png");
+  background-size: 100vw;
+  background-repeat: no-repeat;
+  background-position:bottom;
+  height:75vh;
+}
+
+.section1-text-box-left {
+  color: #32526E;
+  font-size: 1em;
+  float: left;
+  width: 30vw;
+  height: 30vh;
+  margin-top: 15vw;
+}
+
+.section1-text-box-right {
+  text-align: center;
+  background-color: white;
+  font-size: 1.5rem;
+  float: right;
+  margin-right: 10vw;
+  width: 30vw;
+  height: 30vh;
+  margin-top: 15vw;
+  box-shadow: 5px 5px 5px 5px #B2AFAF;
+  border-radius: 10px;
+  overflow: auto;
+}
+
+.section1-text-box-right-button {
+  margin-top: 10vh;
+  border: none;
+  color: white;
+  height: 4vh;
+  width: 15vw;
+  background-color: #5DB586;
+  border-radius: 20px;
+}
+
+// .section1-coins {
+//   margin-left: 8vw;
+//   position: relative;
+//   width: 70%;
+//   -webkit-animation: floatBubble 2s normal forwards ease-out;
+//   animation: floatBubble 2s normal forwards ease-out;
+// }
+
+// @-webkit-keyframes floatBubble {
+//   0% {
+//     top: 30vw;
+//     opacity: 0;
+//   }
+//   100% {
+//     top: -14.9vw;
+//     opacity:1;
+//   }
+// }
+
+// @keyframes floatBubble {
+//   0% {
+//     top: 30vw;
+//     opacity: 0;
+//   }
+//   100% {
+//     top: -14.9vw;
+//     opacity: 1;
+//   }
+// }
