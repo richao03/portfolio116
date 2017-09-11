@@ -64,10 +64,11 @@ li a {
 .section2 {
   background-image: url("../img/section2BG.png");
   background-repeat: no-repeat;
-  background-size: 100%;
-  position: bottom;
+  background-size: 110% 90%;
+  background-position: top;
   width: 100vw;
-  height: 70vw; }
+  height: 80vw;
+  overflow: hidden; }
 
 .section2-text-box-left {
   border: 1px solid red;
@@ -75,7 +76,7 @@ li a {
   color: #32526E;
   font-size: 1.3em;
   text-align: center;
-  margin-top: 5vh;
+  margin-top: 10vh;
   margin-left: 10vh;
   height: 20vw;
   width: 30vw; }
@@ -86,50 +87,67 @@ li a {
   color: #32526E;
   font-size: 1.3em;
   text-align: center;
-  margin-top: 5vh;
+  margin-top: 10vh;
   margin-left: 25vw;
   height: 20vw;
   width: 30vw; }
 
 .section2-partners,
 .section2-press {
-  margin-top: 2vh;
+  margin-top: 5vh;
   height: 20vh; }
 
 .section2-user-review-wrapper {
+  overflow-y: auto;
   border: 4px solid white;
   margin: auto;
-  margin-top: 5vh;
+  margin-top: 10vw;
   vertical-align: middle;
   height: 15vw;
   width: 70vw; }
 
 .section2-user-review-previous {
-  float: left;
-  height: 100%; }
+  float: left; }
 
 .section2-user-review-next {
-  float: right;
-  height: 100%; }
+  float: right; }
 
 .section2-user-review-buttons {
-  display: inline-block;
+  display: -ms-flexbox;
+  -ms-flex-pack: center;
+  -ms-flex-align: center;
+  /* Firefox */
+  display: -moz-box;
+  -moz-box-pack: center;
+  -moz-box-align: center;
+  /* Safari, Opera, and Chrome */
+  display: -webkit-box;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  /* W3C */
+  display: box;
+  box-pack: center;
+  box-align: center;
   color: white;
-  margin: 5vh;
+  vertical-align: middle;
+  height: 99%;
   border: 1px solid red;
   font-weight: 100;
-  font-size: 3.5em;
-  vertical-align: middle !important; }
+  font-size: 3.5em; }
 
 .section2-user-reviews {
+  display: table;
   text-align: center;
   background-image: url("../img/quotes.png");
   background-repeat: no-repeat;
   background-size: 50% 50%;
   background-position: center;
-  overflow: auto;
+  overflow-y: auto;
   height: 100%;
   width: 100%; }
+
+.section2-user-review-text-scroll {
+  overflow-y: auto; }
 
 .section2-user-review-text {
   margin: auto;
@@ -138,3 +156,14 @@ li a {
   display: inline-block;
   width: 30vw;
   margin-top: 2vw; }
+
+.section3 {
+  height: 100vh;
+  width: 100vw;
+  border: 1px solid pink; }
+
+.section3-top-text {
+  border: 1px solid green;
+  width: 100vw;
+  margin: auto;
+  text-align: center; }
