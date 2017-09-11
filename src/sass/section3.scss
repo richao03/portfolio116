@@ -1,12 +1,26 @@
 .section3 {
   height: 100vh;
   width: 100vw;
-  border: 1px solid pink;
 }
 
 .section3-top-text {
-  border: 1px solid green;
-  width: 100vw;
-  margin: auto;
+  color: #32526E;
+  font-size: 1.2em;
+  display: block;
+  min-width: 100vw;
+  text-align: center;
+}
+
+.carousel-wrapper {
+}
+
+.section3-description1,
+.section3-description2,
+.section3-description3 {
+  color: #32526E;
+  font-size: 1.2em;
+  margin-left: 1vw;
+  display: inline-block;
+  width: 32vw;
   text-align: center;
 }
